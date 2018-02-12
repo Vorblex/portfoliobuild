@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="index" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome page</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link rel="stylesheet" href="assets/css/foundation.min.css?rel=5816">
+    <link rel="stylesheet" href="assets/css/main.min.css?rel=5816">
+    <script>document.createElement( "picture" );</script>
+    <script src="assets/js/picturefill.min.js?rel=5816" async></script><!--[if lt IE 10]>
+<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+<![endif]-->
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader__progress">
+        <div class="preloader__percentage">0</div>
+        <div class="preloader__bar"></div>
+        <svg class="preloader__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 144 144" enable-background="new 0 0 144 144">
+          <circle class="preloader__circle preloader__circle_outer" opacity="0.4" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-dasharray="439.822971503" stroke-dashoffset="439.822971503" stroke-miterlimit="10" cx="72" cy="72" r="70" transform="rotate(-160 72 72)"></circle>
+          <circle class="preloader__circle preloader__circle_center" opacity="0.7" fill="none" stroke="#FFFFFF" stroke-width="3.8938" stroke-dasharray="345.575191895" stroke-dashoffset="345.575191895" stroke-miterlimit="10" cx="72" cy="72" r="55" transform="rotate(-120 72 72)"></circle>
+          <circle class="preloader__circle preloader__circle_inner" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" stroke-dasharray="251.327412287" stroke-dashoffset="251.327412287" cx="72" cy="72" r="40" transform="rotate(-90 72 72)"></circle>
+        </svg>
+      </div>
+    </div>
+    <ul class="parallax parallax_welcome"> 
+      <li class="parallax__item parallax__item_1"></li>
+      <li class="parallax__item parallax__item_2"></li>
+      <li class="parallax__item parallax__item_3"></li>
+      <li class="parallax__item parallax__item_4"></li>
+      <li class="parallax__item parallax__item_5"></li>
+      <li class="parallax__item parallax__item_6"></li>
+      <li class="parallax__item parallax__item_7"></li>
+      <li class="parallax__item parallax__item_8"></li>
+      <li class="parallax__item parallax__item_9"></li>
+    </ul>
+    <div class="welcome">
+      <button class="btn btn_color_white btn_rounded welcome__btn" id="flipBtn" type="button">Авторизоваться</button>
+      <div class="flipper unloaded">
+        <div class="flipper__container">
+          <div class="flipper__front">
+            <div class="flipper__content">
+              <div class="user flipper__user-block">
+                <div class="user__pic" style="background-image: url(&quot;assets/img/user.jpg&quot;);"> </div>
+                <div class="user__name user__name_color_black user__name_small">Воробей Александр</div>
+                <div class="user__desc user__desc_color_black">Личный сайт веб разработчика</div>
+              </div>
+              <ul class="socials">
+                <li class="socials__item"><a class="socials__link" href="https://vk.com/">vk
+                    <svg class="socials__icon socials__icon_color_green">
+                      <use xlink:href="assets/img/sprite.svg#vk">  </use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="https://github.com/">github
+                    <svg class="socials__icon socials__icon_color_green">
+                      <use xlink:href="assets/img/sprite.svg#github">  </use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="https://www.linkedin.com/">in
+                    <svg class="socials__icon socials__icon_color_green">
+                      <use xlink:href="assets/img/sprite.svg#in">  </use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="buttons"><a class="btn btn_transp btn_separated" href="works.html">Мои работы  </a><a class="btn btn_transp btn_separated" href="about.html">Обо мне  </a><a class="btn btn_transp" href="blog.html">Блог</a></div>
+          </div>
+          <div class="flipper__back">
+            <form class="login-form" id="loginForm" action="/auth.php">
+              <div class="login-form__content">
+                <div class="form-message form-message_success login-form__form-message"></div>
+                <div class="form-message form-message_error login-form__form-message"></div>
+                <h2 class="subtitle">Авторизуйтесь</h2>
+                <label class="input input_iconed">
+                  <input class="input__field" name="login" type="text" placeholder="Логин" data-qtipcontent="Введите логин">
+                  <svg class="input__icon"> 
+                    <use xlink:href="assets/img/sprite.svg#login"></use>
+                  </svg>
+                </label>
+                <label class="input input_iconed">
+                  <input class="input__field" name="password" type="password" placeholder="Пароль" data-qtipcontent="Введите пароль">
+                  <svg class="input__icon"> 
+                    <use xlink:href="assets/img/sprite.svg#password"></use>
+                  </svg>
+                </label>
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" name="ishuman">
+                  <svg class="checkbox__icon">
+                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                  </svg><span class="checkbox__text">Я человек</span>
+                </label>
+                <div class="radios">
+                  <div class="radios__title">Вы точно не робот?</div>
+                  <input class="radios__input" id="yes" type="radio" name="robot" value="1">
+                  <label class="radios__label" for="yes"><span class="radios__text">Да</span></label>
+                  <input class="radios__input" id="no" type="radio" name="robot" value="0">
+                  <label class="radios__label" for="no"><span class="radios__text">Не уверен</span></label>
+                </div>
+              </div>
+              <div class="buttons">
+                <button class="btn btn_hov_white btn_separated" type="submit">Отправить </button>
+                <button class="btn btn_hov_white" type="reset">Очистить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/foundation.min.js?rel=5816"></script>
+    <script src="assets/js/app.min.js?rel=5816"></script>
+  </body>
+</html>
